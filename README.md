@@ -14,7 +14,7 @@ The following branches exist in this repo:
 | Branch Name | Description |
 |:------------|:------------|
 | `trunk`     | You are here. This is just a placeholder for documentation. |
-| [`sg200x`](https://github.com/UMN-Kernel-Object/u-boot/tree/sg200x) | This is based on the [sg200x branch](https://github.com/sophgo/u-boot-2021.10/tree/sg200x-dev) of [sophgo/u-boot-2021.10](https://github.com/sophgo/u-boot-2021.10). |
+| [`milkv-duos-sd`](https://github.com/UMN-Kernel-Object/u-boot/tree/milkv-duos-sd) | This is based on the [sg200x branch](https://github.com/sophgo/u-boot-2021.10/tree/sg200x-dev) of [sophgo/u-boot-2021.10](https://github.com/sophgo/u-boot-2021.10), with patches applied that are specific to the [Milk-V Duo S](https://milkv.io/duo-s) when booting from microSD. |
 
 If you're hacking on this, you might want to add upstream U-Boot and the vendor repos as remotes.
 Copy-paste-able block:
