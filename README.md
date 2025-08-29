@@ -3,6 +3,10 @@
 This is UKO's fork of U-Boot.
 Our current development board for [ukoos] needs U-Boot patches that haven't been upstreamed, and we're also making our own modifications past them.
 
+Patches have also been applied from:
+
+- [Fishwaldo/sophgo-sg200x-debian](https://github.com/Fishwaldo/sophgo-sg200x-debian/)
+
 [ukoos]: https://github.com/UMN-Kernel-Object/ukoos
 
 The following branches exist in this repo:
