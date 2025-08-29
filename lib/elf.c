@@ -34,6 +34,10 @@ unsigned long load_elf64_image_phdr(unsigned long addr)
 
 	/* Load each program header */
 	for (i = 0; i < ehdr->e_phnum; ++i) {
+		if(phdr->p_type != PT_LOAD) {
+			phdr++;
+			continue;
+		}
 		void *dst = (void *)(ulong)phdr->p_paddr;
 		void *src = (void *)addr + phdr->p_offset;
 
