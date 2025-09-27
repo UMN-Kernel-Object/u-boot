@@ -20,7 +20,8 @@ static int do_gok(struct cmd_tbl *cmdtp, int flag, int argc, char *const argv[])
 	else
 		fdt_addr = env_get_hex("fdt_addr", 0);
 
-	printf("## Starting kernel at 0x%08lX ...\n", addr);
+	printf("## Starting kernel at 0x%08lx (boot_hart=0x%08lx, fdt_addr=0x%08lx) ...\n",
+		addr, gd->arch.boot_hart, fdt_addr);
 
 	cleanup_before_linux();
 	rc = entry(gd->arch.boot_hart, fdt_addr);
