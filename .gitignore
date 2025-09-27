@@ -8,3 +8,30 @@
 # Nix outputs
 result
 result-*
+
+# U-Boot build artifacts
+*.bin
+*.built-in.o
+*.dtb
+*.elf
+*.lds
+*.map
+*.o
+*.srec
+*.su
+*.sym
+System.map
+arch/*/dts/*.dtb
+arch/*/lib/asm-offsets.s
+include/config/
+include/generated/
+lib/asm-offsets.s
+scripts/dtc/dtc-lexer.lex.c
+scripts/dtc/dtc-parser.tab.c
+scripts/dtc/dtc-parser.tab.h
+scripts/kconfig/zconf.lex.c
+scripts/kconfig/zconf.tab.c
+u-boot*
+
+# Compilation database
+compile_commands.json
