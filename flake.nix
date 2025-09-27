@@ -13,7 +13,7 @@
       rec {
         devShells.default = pkgs.mkShell {
           inputsFrom = builtins.attrValues packages;
-          nativeBuildInputs = [ ];
+          nativeBuildInputs = [ pkgs.bear ];
         };
 
         packages.default = pkgs.stdenv.mkDerivation {
