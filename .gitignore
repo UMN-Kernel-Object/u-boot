@@ -110,3 +110,7 @@ __pycache__
 # pylint files
 /pylint.cur
 /pylint.out/
+
+# nix results
+result
+result-*
