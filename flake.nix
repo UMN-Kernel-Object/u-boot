@@ -66,6 +66,7 @@
             install -Dt $out -m 0644 bootinfo_spinand.bin
             install -Dt $out -m 0644 bootinfo_spinor.bin
             install -Dt $out/bin tools/mkenvimage
+            install -Dt $out/bin tools/mkimage
 
             runHook postInstall
           '';
