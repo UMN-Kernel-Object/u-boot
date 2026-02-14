@@ -47,7 +47,9 @@
 			reg = <0x00>;
 			status = "okay";
 			compatible = "riscv";
-			riscv,isa = "rv64imafdvcsu";
+			riscv,isa = "rv64imafdc_ziccamoa_ziccif_zicclsm_ziccrse_zicntr_zicsr_zifencei_zihpm_zfh_zfhmin_ssccptr_xtheadba_xtheadbb_xtheadbs_xtheadcmo_xtheadcondmov_xtheadfmemidx_xtheadmac_xtheadmemidx_xtheadmempair_xtheadsync";
+			riscv,isa-base = "rv64i";
+			riscv,isa-extensions = "i", "m", "a", "f", "d", "c", "ziccamoa", "ziccif", "zicclsm", "ziccrse", "zicntr", "zicsr", "zifencei", "zihpm", "zfh", "zfhmin", "ssccptr", "xtheadba", "xtheadbb", "xtheadbs", "xtheadcmo", "xtheadcondmov", "xtheadfmemidx", "xtheadmac", "xtheadmemidx", "xtheadmempair", "xtheadsync";
 			mmu-type = "riscv,sv39";
 			clock-frequency = <25000000>;
 
